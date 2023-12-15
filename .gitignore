@@ -1,0 +1,7 @@
+*.code-workspace
+/_tmp
+/.vscode
+/zero_to_one_hundred
+/.obsidian
+main*.py
+map.yaml
