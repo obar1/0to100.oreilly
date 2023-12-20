@@ -1,7 +1,7 @@
 
 # TOC
 ## `9` books
-### 2023/12/15-06:56:44
+### 2023/12/20-14:22:17
 |  ISBN 	|   	|   	|   	|  `json-contents` 	| `status` |
 |---	|---	|---	|---	|---	|---	|
 <span style="color:blue">**9781484279960**</span>|![`img`](9781484279960/9781484279960.png)|[`epub`](9781484279960/9781484279960.epub)|[`pdf`](9781484279960/9781484279960.pdf)|{ <br/>      " isbn " :  " 9781484279960 " , <br/>      " url " :  " https://learning.oreilly.com/library/view/devops-in-python/9781484279960/ "  <br/> }|<span style="color:yellow">**WIP**</span>
