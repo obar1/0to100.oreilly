@@ -1,9 +1,27 @@
-*.code-workspace
-/_tmp
-/.vscode
-/zero_to_one_hundred
-/.obsidian
-main*.py
-map.yaml
-*.pdf
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache
+
+# venv
+venv/
 .venv/
+
+# vscode
+.vscode/
+# idea
+.idea/**
+
+# test related
+0to100-**/
+0*/
+978*/
+map.md
+repo/
+toc.md
+*.yaml
+safaribooks/
+
+# pip install
+build/
