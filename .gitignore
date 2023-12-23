@@ -14,9 +14,7 @@ venv/
 .idea/**
 
 # test related
-0to100-**/
-0*/
-978*/
+0to100**/
 map.md
 repo/
 toc.md
