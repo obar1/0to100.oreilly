@@ -1,5 +1,8 @@
-# pylint: disable=R0801
-from zero_to_one_hundred.configs.config_map import ConfigMap
+from zero_to_one_hundred.repository.ztoh_persist_fs import ZTOHPersistFS
+
+from zero_to_one_hundred.repository.ztoh_process_fs import ZTOHProcessFS
+
+from zero_to_one_hundred.configs.ztoh_config_map import ZTOHConfigMap
 from zero_to_one_hundred.models.readme_md import ReadMeMD
 from zero_to_one_hundred.models.section import Section
 from zero_to_one_hundred.processors.a_processor import AProcessor
@@ -10,7 +13,13 @@ class CreateSectionProcessor(AProcessor):
     """CreateSectionProcessor:
     create a new new_section on fs from http address"""
 
-    def __init__(self, persist_fs, process_fs, config_map: ConfigMap, http_url: str):
+    def __init__(
+        self,
+        config_map: ZTOHConfigMap,
+        persist_fs: ZTOHPersistFS,
+        process_fs: ZTOHProcessFS,
+        http_url: str,
+    ):
         Validator.is_valid_http(http_url)
         self.http_url = http_url
         self.persist_fs = persist_fs
@@ -24,18 +33,18 @@ class CreateSectionProcessor(AProcessor):
         - add new sections to map at the end
         """
         section: Section = Section(
+            self.config_map,
             self.persist_fs,
             self.process_fs,
-            self.config_map,
             self.http_url,
             is_done=False,
         )
         section.write()
         readme_md: ReadMeMD = ReadMeMD(
+            self.config_map,
             self.persist_fs,
             self.process_fs,
-            self.config_map,
-            section.dir_name,
+            Section.from_dir_to_http_url,
             section.http_url,
         )
         readme_md.write()

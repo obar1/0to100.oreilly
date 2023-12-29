@@ -1,5 +1,6 @@
 # pylint: disable=W0106,R1710
 
+import traceback
 from subprocess import CalledProcessError
 from typing import List
 
@@ -22,13 +23,12 @@ def run_core(argv: List[str], factory_provider: AFactoryProvider):
         assert factory is not None
         [processor.process() for processor in factory.get_processor(argv) if processor]
 
-    except AssertionError:
-        print("check the code")
-    except FileNotFoundError:
-        print("set env for MAP_YAML_PATH with map.yaml path")
-    except (NotImplementedError, UnsupportedConfigMapError, CalledProcessError):
-        print("check MAP_YAML_PATH env var contents")
     except ModuleNotFoundError:
-        print("??? have you installed all the dep")
+        print("DDD have you installed all the dep")
+    except (NotImplementedError, UnsupportedConfigMapError, CalledProcessError):
+        print("please, check MAP_YAML_PATH env var contents")
+    except AssertionError:
+        print("please, check the code")
     except (ValueError, TypeError, IndexError):
-        return factory.help_processor().process()
+        traceback.print_exc()
+        factory.help_processor().process()

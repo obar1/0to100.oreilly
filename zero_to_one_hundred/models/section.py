@@ -1,4 +1,4 @@
-from zero_to_one_hundred.configs.config_map import ConfigMap
+from zero_to_one_hundred.configs.ztoh_config_map import ZTOHConfigMap
 from zero_to_one_hundred.models.readme_md import ReadMeMD
 
 
@@ -13,9 +13,9 @@ class Section:
 
     def __init__(
         self,
+        config_map: ZTOHConfigMap,
         persist_fs,
         process_fs,
-        config_map: ConfigMap,
         http_url: str,
         is_done: bool = False,
     ):
@@ -23,7 +23,7 @@ class Section:
         self.persist_fs = persist_fs
         self.process_fs = process_fs
         self.http_url = http_url
-        self.dir_name = self.__from_dir_to_http_url(http_url)
+        self.dir_name = Section.from_dir_to_http_url(http_url)
         self.dir_readme_md = self.dir_name + "/readme.md"
         self.is_done = is_done
 
@@ -47,7 +47,7 @@ class Section:
         return self.find_header().strip("\n")
 
     @classmethod
-    def __from_dir_to_http_url(cls, http_url):
+    def from_dir_to_http_url(cls, http_url):
         return (
             http_url.replace("/", "§")
             .replace("<", "§")
@@ -78,22 +78,23 @@ class Section:
 
     @classmethod
     def build_from_http(cls, config_map, http_url, persist_fs, process_fs):
-        return Section(persist_fs, process_fs, config_map, http_url)
+        return Section(config_map, persist_fs, process_fs, http_url)
 
     @classmethod
-    def build_from_dir(cls, persist_fs, process_fs, config_map: ConfigMap, dir_name):
+    def build_from_dir(
+        cls, persist_fs, process_fs, config_map: ZTOHConfigMap, dir_name
+    ):
         http_url = cls.from_dir_to_http_url_to(dir_name)
         return Section(
+            config_map,
             persist_fs,
             process_fs,
-            config_map,
             http_url,
             cls.done_section_status(persist_fs, config_map.get_repo_path, dir_name),
         )
 
     @classmethod
     def is_valid_dir(cls, curr_dir: str):
-        print(curr_dir)
         return curr_dir.count("http") > 0
 
     def refresh_links(self):
@@ -107,9 +108,9 @@ class Section:
                     + str(line).strip("\n")
                     + "](../"
                     + Section(
+                        self.config_map,
                         self.persist_fs,
                         self.process_fs,
-                        self.config_map,
                         str(line).strip("\n"),
                     ).dir_readme_md
                     + ")\n"
@@ -117,10 +118,10 @@ class Section:
             return res
 
         readme_md: ReadMeMD = ReadMeMD(
+            self.config_map,
             self.persist_fs,
             self.process_fs,
-            self.config_map,
-            self.dir_name,
+            Section.from_dir_to_http_url,
             self.http_url,
         )
         lines_converted = []
@@ -135,10 +136,10 @@ class Section:
             return None
 
         readme_md: ReadMeMD = ReadMeMD(
+            self.config_map,
             self.persist_fs,
             self.process_fs,
-            self.config_map,
-            self.dir_name,
+            Section.from_dir_to_http_url,
             self.http_url,
         )
         res = ""
@@ -153,8 +154,8 @@ class Section:
             if len(not_null) > 1:  # take first one header found
                 res = not_null[1]
         except:
-            print(readme_md)
-            res = "TODO:"
+            print(f"DDD issue with {readme_md}")
+            res = "FIXME: "
         return res
 
     @property
@@ -187,14 +188,16 @@ class Section:
     @classmethod
     def get_legend_as_md(cls):
         return """
-:cyclone: if is_quest
-:floppy_disk: if is_lab
-:whale: if is_template
-:snake: if is_game
-:pushpin: else
+| footprints | completed | 
+|---|---|
+| :footprints: | :green_heart: |
 
-:green_heart: completed
-:footprints: wip"""
+> extra
+>
+| quest | lab | template | game | course |
+|---|---|---|----|---|
+| :cyclone: | :floppy_disk: | :whale: | :snake: | :pushpin: |
+"""
 
     def __eq__(self, other):
         if other is self:

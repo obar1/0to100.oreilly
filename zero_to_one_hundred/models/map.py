@@ -1,7 +1,9 @@
 from typing import Callable, List
-from connect.utils.terminal.markdown import render
 
-from zero_to_one_hundred.configs.config_map import ConfigMap
+from connect.utils.terminal.markdown import render
+from zero_to_one_hundred.repository.ztoh_persist_fs import ZTOHPersistFS
+
+from zero_to_one_hundred.configs.ztoh_config_map import ZTOHConfigMap
 from zero_to_one_hundred.models.section import Section
 
 
@@ -9,7 +11,12 @@ class Map:
     """Map:
     map md with list of sections as from fs"""
 
-    def __init__(self, persist_fs, config_map: ConfigMap, sections: List[Section]):
+    def __init__(
+        self,
+        config_map: ZTOHConfigMap,
+        persist_fs: ZTOHPersistFS,
+        sections: List[Section],
+    ):
         self.config_map = config_map
         self.readme_md = config_map.get_repo_path + "/" + config_map.get_repo_map_md
         self.persist_fs = persist_fs
@@ -36,16 +43,18 @@ class Map:
         flattened_sections = list(map(lambda_flatten_section, sections))
         return "\n".join(flattened_sections)
 
-    def write(self, as_sorted):
+    def write(self, as_sorted: bool):
         # init with list of sections found
         txt = []
         txt.append(
             f"""
 # {self.readme_md}
 
-> sorted:{self.config_map.get_repo_sorted}
+## sorted:
+{self.config_map.get_repo_sorted}
 
-> legend:{Section.get_legend_as_md()}
+## legend:
+{Section.get_legend_as_md()}
 
 {self.__repr_flatten(self.sections, as_sorted)}
         """
