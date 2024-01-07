@@ -1,13 +1,13 @@
-from typing import Callable, List
-
-from connect.utils.terminal.markdown import render
+from typing import List
+from zero_to_one_hundred.configs.a_config_map import AConfigMap
 from zero_to_one_hundred.repository.ztoh_persist_fs import ZTOHPersistFS
 
 from zero_to_one_hundred.configs.ztoh_config_map import ZTOHConfigMap
 from zero_to_one_hundred.models.section import Section
+from zero_to_one_hundred.views.markdown_renderer import MarkdownRenderer
 
 
-class Map:
+class Map(MarkdownRenderer):
     """Map:
     map md with list of sections as from fs"""
 
@@ -18,48 +18,55 @@ class Map:
         sections: List[Section],
     ):
         self.config_map = config_map
-        self.readme_md = config_map.get_repo_path + "/" + config_map.get_repo_map_md
+        self.readme_md = config_map.get_repo_map_md
         self.persist_fs = persist_fs
         self.sections = sections
 
-    def __repr__(self):
-        return f"Map {self.readme_md}, {self.sections}"
+    def asMarkDown(self) -> str:
+        lf_char = "\n"
 
-    @staticmethod
-    def __repr_flatten(sections: List[Section], as_sorted: bool) -> str:
-        # 1. <https://cloud.google.com/api-gateway/docs/about-ap
-        # i-gateway> :ok: [`here`](../https§§§cloud.google.com§/readme.md)
-        print(as_sorted)
-        lambda_flatten_section: Callable[[Section], str] = (
-            lambda s: "1. "
-            + s.get_id_name
-            + " [`here`]("
-            + s.get_dir_name
-            + "/readme.md)"
-            + s.get_done_as_md
-            + " "
-            + s.get_format_as_md
-        )
-        flattened_sections = list(map(lambda_flatten_section, sections))
-        return "\n".join(flattened_sections)
+        def get_legend_as_md(self):
+            txt: str = """
+            ## legend:
+
+            | footprints | completed | 
+            |---|---|
+            | :footprints: | :green_heart: |
+            """
+            txt += lf_char
+
+            match self.config_map.get_repo_legend_type:
+                case AConfigMap.SUPPORTED_EXTRA_MAP.gcp.name:
+                    txt += """
+                    > extra
+                    >
+                    | quest | lab | template | game | course |
+                    |---|---|---|----|---|
+                    | :cyclone: | :floppy_disk: | :whale: | :snake: | :pushpin: |""".strip()
+                case AConfigMap.SUPPORTED_EXTRA_MAP.datacamp.name:
+                    txt += """
+                    > extra
+                    >
+                    | projects | tutorial | course |
+                    |---|---|---|
+                    | :cyclone: | :floppy_disk: | :whale: |""".strip()
+                case _:
+                    txt += lf_char
+            return txt
+
+        txt = f"""{f"# map {self.readme_md}, {len(self.sections)}"}
+
+{f"## sorted: {self.config_map.get_repo_sorted}"}
+
+{get_legend_as_md(self)}
+
+{lf_char.join((section.asMarkDown() for section in self.sections))}
+"""
+        return txt.replace("  ", "")
 
     def write(self, as_sorted: bool):
         # init with list of sections found
-        txt = []
-        txt.append(
-            f"""
-# {self.readme_md}
-
-## sorted:
-{self.config_map.get_repo_sorted}
-
-## legend:
-{Section.get_legend_as_md()}
-
-{self.__repr_flatten(self.sections, as_sorted)}
-        """
-        )
-        print(render("\n".join(txt)))
+        txt = self.asMarkDown()
         return self.persist_fs.write_file(self.readme_md, txt)
 
     @classmethod

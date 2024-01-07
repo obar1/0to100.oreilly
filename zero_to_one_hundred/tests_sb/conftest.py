@@ -49,11 +49,6 @@ def get_map_yaml_path(get_resource_path):
 
 
 @pytest.fixture
-def get_unsupported_map_yaml_path(get_resource_path):
-    yield get_resource_path + "/unsupported_map.yaml"
-
-
-@pytest.fixture
 def mock_map_yaml_env_vars(get_map_yaml_path):
     with mock.patch.dict(os.environ, {AConfigMap.MAP_YAML_PATH: get_map_yaml_path}):
         yield
@@ -68,16 +63,26 @@ def mock_secret_map_yaml_env_vars(get_secret_map_yaml_path):
 
 
 @pytest.fixture
-def mock_settings_env_vars(get_map_yaml_path):
+def env_map_yaml(get_map_yaml_path):
     with mock.patch.dict(os.environ, {AConfigMap.MAP_YAML_PATH: get_map_yaml_path}):
         yield
 
 
 @pytest.fixture
-def get_config_map(mock_settings_env_vars, get_map_yaml_path):
-    return SBConfigMap(SBPersistFS)
+def persist_fs() -> SBPersistFS:
+    yield SBPersistFS()
 
 
 @pytest.fixture
-def get_factory_provider(mock_settings_env_vars):
+def process_fs() -> SBProcessFS:
+    yield SBProcessFS()
+
+
+@pytest.fixture
+def get_config_map(env_map_yaml, get_map_yaml_path, persist_fs):
+    return SBConfigMap(persist_fs)
+
+
+@pytest.fixture
+def get_factory_provider(env_map_yaml):
     return SBFactoryProvider(SBPersistFS, SBProcessFS)
