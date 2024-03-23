@@ -31,6 +31,23 @@ ex
 ```ps1
 Set-Content -Path '.venv' -Stream com.dropbox.ignored -Value 1
 Set-Content -Path '.git' -Stream com.dropbox.ignored -Value 1
-```
+``` 
 
 - for each 978x folder rememebr to haev the proper gitignore setup and add `sync to dropbox` from the UX if necessary
+
+## sharing
+
+use
+
+```ps1
+[System.Environment]::SetEnvironmentVariable('MAP_YAML_PATH','$HOME\map.yaml')
+```
+![alt text](76ed6297-70d2-4111-88de-372b245b3843.png)
+
+or  
+> if you are like to use mac/linux 
+
+```bash
+export MAP_YAML_PATH='~/map.yaml'
+```
+![alt text](625e3d8e-869e-45fe-877e-661b30ac78b5.png)
