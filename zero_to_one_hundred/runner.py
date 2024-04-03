@@ -24,14 +24,11 @@ def run_core(argv: List[str], factory_provider: AFactoryProvider):
         [processor.process() for processor in factory.get_processor(argv) if processor]
 
     except ModuleNotFoundError:
-        print("Please cheek if have you installed all the dep")
-        traceback.print_exc()
+        print("DDD have you installed all the dep")
     except (NotImplementedError, UnsupportedConfigMapError, CalledProcessError):
-        print("Please check MAP_YAML_PATH env var contents")
-        traceback.print_exc()
+        print("please, check MAP_YAML_PATH env var contents")
     except AssertionError:
-        print("Please check the below")
-        traceback.print_exc()
-    except:
+        print("please, check the code")
+    except (ValueError, TypeError, IndexError):
         traceback.print_exc()
         factory.help_processor().process()
