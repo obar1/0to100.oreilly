@@ -29,7 +29,7 @@ def isbn():
 
 
 @pytest.fixture
-def pages_tot():
+def page_tot():
     yield 999
 
 

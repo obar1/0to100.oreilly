@@ -38,10 +38,10 @@ class Metadata(MarkdownRenderer):
         given metadata_dict, get values of pages and return metadata_dict, n/a if no valid values are present
         """
         page_curr = int(metadata_dict.get("page_curr", "0"))
-        pages_tot = int(metadata_dict.get("page_tot", "0"))
+        page_tot = int(metadata_dict.get("page_tot", "0"))
         perc = 0.0
-        if pages_tot > 0:
-            perc = 100 * page_curr / pages_tot
+        if page_tot > 0:
+            perc = 100 * page_curr / page_tot
             return str(round(perc, 1)) + "%"
         return "n/a"
 
