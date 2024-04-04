@@ -144,8 +144,8 @@ class SBPersistFS(ZTOHPersistFS):
             return int(json_data["page_curr"])
 
     @classmethod
-    def read_page_tot(cls, fn: str) -> int:
-        print(f"read_page_tot {fn}")
+    def read_pages_tot(cls, fn: str) -> int:
+        print(f"read_pages_tot {fn}")
         src = fitz.open(fn)
         print(src)
         return len(src)
