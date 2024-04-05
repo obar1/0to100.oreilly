@@ -1,7 +1,7 @@
 
 # TOC
 ## `18` books
-### 2024/04/05-22:21:56
+### 2024/04/05-22:23:14
 |  ISBN 	|   img	|  epub 	|  pdf 	|  `json-contents` 	| `status` |
 |---	|---	|---	|---	|---	|---	|
 |<span style="color:blue">**9780138050764**</span>|![`img`](./9780138050764/9780138050764.png)|[`epub`](./9780138050764/9780138050764.epub)|[`pdf`](./9780138050764/9780138050764.pdf)|{'isbn': '9780138050764',<br/> 'page_curr': '562',<br/> 'page_tot': '562',<br/> 'pages_perc': '100.0%',<br/> 'url': '> https://learning.oreilly.com/course/learn-enough-python/9780138050764/ <'}|<span style="color:green">**DONE**</span>|
