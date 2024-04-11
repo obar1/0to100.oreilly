@@ -1,7 +1,7 @@
 
 # TOC
-## `18` books
-### 2024/04/09-19:55:55
+## `19` books
+### 2024/04/11-16:35:49
 |  ISBN 	|   img	|  epub 	|  pdf 	|  `json-contents` 	| `status` |
 |---	|---	|---	|---	|---	|---	|
 |<span style="color:blue">**9780138050764**</span>|![`img`](./9780138050764/9780138050764.png)|[`epub`](./9780138050764/9780138050764.epub)|[`pdf`](./9780138050764/9780138050764.pdf)|{'isbn': '9780138050764',<br/> 'page_curr': '562',<br/> 'page_tot': '562',<br/> 'pages_perc': '100.0%',<br/> 'url': '> https://learning.oreilly.com/course/learn-enough-python/9780138050764/ <'}|<span style="color:green">**DONE**</span>|
@@ -22,4 +22,5 @@
 |<span style="color:blue">**9781617296901**</span>|![`img`](./9781617296901/9781617296901.png)|[`epub`](./9781617296901/9781617296901.epub)|[`pdf`](./9781617296901/9781617296901.pdf)|{'isbn': '9781617296901',<br/> 'kb': 'https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7library%C2%A7view%C2%A7data-pipelines-with%C2%A79781617296901%C2%A7',<br/> 'page_curr': '0',<br/> 'page_tot': '736',<br/> 'pages_perc': '0.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/data-pipelines-with/9781617296901/ <'}|<span style="color:yellow">**WIP**</span>|
 |<span style="color:blue">**9781789342604**</span>|![`img`](./9781789342604/9781789342604.png)|[`epub`](./9781789342604/9781789342604.epub)|[`pdf`](./9781789342604/9781789342604.pdf)|{'isbn': '9781789342604',<br/> 'kb': 'https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7videos%C2%A7apache-kafka-series%C2%A79781789342604%C2%A7',<br/> 'page_curr': '8',<br/> 'page_tot': '15',<br/> 'pages_perc': '53.3%',<br/> 'title': 'Apache Kafka Series - Learn Apache Kafka for Beginners v3',<br/> 'url': '> https://learning.oreilly.com/videos/apache-kafka-series/9781789342604 <'}|<span style="color:yellow">**WIP**</span>|
 |<span style="color:blue">**9781803246284**</span>|![`img`](./9781803246284/9781803246284.png)|[`epub`](./9781803246284/9781803246284.epub)|[`pdf`](./9781803246284/9781803246284.pdf)|{'isbn': '9781803246284',<br/> 'kb': 'https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7library%C2%A7view%C2%A7data-engineering-with%C2%A79781803246284%C2%A7',<br/> 'page_curr': '0',<br/> 'page_tot': '1538',<br/> 'pages_perc': '0.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/-/9781803246284/ <'}|<span style="color:yellow">**WIP**</span>|
+|<span style="color:blue">**9781838555962**</span>|![`img`](./9781838555962/9781838555962.png)|[`epub`](./9781838555962/9781838555962.epub)|[`pdf`](./9781838555962/9781838555962.pdf)|{'isbn': '9781838555962',<br/> 'kb': 'https://github.com/obar1/kb.oreilly/blob/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7course%C2%A7kubernetes-for-the%C2%A79781838555962%C2%A7',<br/> 'page_curr': '1',<br/> 'page_tot': '11',<br/> 'pages_perc': '9.1%',<br/> 'title': 'Kubernetes for the Absolute Beginners - Hands-On',<br/> 'url': '> https://learning.oreilly.com/course/kubernetes-for-the/9781838555962/ <'}|<span style="color:yellow">**WIP**</span>|
         
