@@ -1,7 +1,7 @@
 
 # TOC
 ## `19` books
-### 2024/06/18-11:53:46
+### 2024/06/18-11:56:25
 |  ISBN 	|   img	|  epub 	|  pdf 	|  `json-contents` 	| `status` |
 |---	|---	|---	|---	|---	|---	|
 |<span style="color:blue">**9780138050764**</span>|![`img`](./9780138050764/9780138050764.png)|[`epub`](./9780138050764/9780138050764.epub)|[`pdf`](./9780138050764/9780138050764.pdf)|{'isbn': '9780138050764',<br/> 'page_curr': '562',<br/> 'page_tot': '562',<br/> 'pages_perc': '100.0%',<br/> 'url': '> https://learning.oreilly.com/course/learn-enough-python/9780138050764/ <'}|<span style="color:green">**DONE**</span>|
@@ -22,5 +22,5 @@
 |<span style="color:blue">**9781837630745**</span>|![`img`](./9781837630745/9781837630745.png)|[`epub`](./9781837630745/9781837630745.epub)|[`pdf`](./9781837630745/9781837630745.pdf)|{'isbn': '9781837630745',<br/> 'page_curr': '0',<br/> 'page_tot': '954',<br/> 'pages_perc': '0.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/-/9781837630745/ <'}|<span style="color:yellow">**WIP**</span>|
 |<span style="color:blue">**9781492056348**</span>|![`img`](./9781492056348/9781492056348.png)|[`epub`](./9781492056348/9781492056348.epub)|[`pdf`](./9781492056348/9781492056348.pdf)|{'isbn': '9781492056348',<br/> 'kb': 'https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7library%C2%A7view%C2%A7fluent-python-2nd%C2%A79781492056348%C2%A7',<br/> 'page_curr': '0',<br/> 'page_tot': '1241',<br/> 'pages_perc': '0.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/fluent-python-2nd/9781492056348/ <'}|<span style="color:yellow">**WIP**</span>|
 |<span style="color:blue">**9781804615256**</span>|![`img`](./9781804615256/9781804615256.png)|[`epub`](./9781804615256/9781804615256.epub)|[`pdf`](./9781804615256/9781804615256.pdf)|{'isbn': '9781804615256',<br/> 'page_curr': '0',<br/> 'page_tot': '608',<br/> 'pages_perc': '0.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/building-etl-pipelines/9781804615256/ <'}|<span style="color:yellow">**WIP**</span>|
-|<span style="color:blue">**9781484296882**</span>|![`img`](./9781484296882/9781484296882.png)|[`epub`](./9781484296882/9781484296882.epub)|[`pdf`](./9781484296882/9781484296882.pdf)|{'isbn': '9781484296882',<br/> 'page_curr': '0',<br/> 'page_tot': '165',<br/> 'pages_perc': '0.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/google-cloud-platform/9781484296882/ <'}|<span style="color:yellow">**WIP**</span>|
+|<span style="color:blue">**9781484296882**</span>|![`img`](./9781484296882/9781484296882.png)|[`epub`](./9781484296882/9781484296882.epub)|[`pdf`](./9781484296882/9781484296882.pdf)|{'isbn': '9781484296882',<br/> 'page_curr': '165',<br/> 'page_tot': '165',<br/> 'pages_perc': '100.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/google-cloud-platform/9781484296882/ <'}|<span style="color:green">**DONE**</span>|
         
