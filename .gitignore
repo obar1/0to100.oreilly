@@ -27,3 +27,6 @@ safaribooks/
 build
 /dist
 *.egg-info
+
+*.pdf
+*.epub
