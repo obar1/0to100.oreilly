@@ -1,7 +1,7 @@
 
 # TOC
 ## `19` books
-### 2024/06/22-15:46:02
+### 2024/06/22-16:12:19
 |  ISBN 	|   img	|  epub 	|  pdf 	|  `json-contents` 	| `status` |
 |---	|---	|---	|---	|---	|---	|
 |<span style="color:blue">**9781119361152**</span>|![`img`](./9781119361152/9781119361152.png)|[`epub`](./9781119361152/9781119361152.epub)|[`pdf`](./9781119361152/9781119361152.pdf)|{'isbn': '9781119361152',<br/> 'page_curr': '0',<br/> 'page_tot': '250',<br/> 'pages_perc': '0.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/do-big-things/9781119361152/ <'}|<span style="color:yellow">**WIP**</span>|
