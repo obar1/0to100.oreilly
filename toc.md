@@ -1,7 +1,7 @@
 
 # TOC
 ## `18` books
-### 2024/06/22-16:28:01
+### 2024/06/22-16:33:53
 |  ISBN 	|   img	|  epub 	|  pdf 	|  `json-contents` 	| `status` |
 |---	|---	|---	|---	|---	|---	|
 |<span style="color:blue">**9781098118945**</span>|![`img`](./9781098118945/9781098118945.png)|[`epub`](./9781098118945/9781098118945.epub)|[`pdf`](./9781098118945/9781098118945.pdf)|{'isbn': '9781098118945',<br/> 'kb': 'https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7library%C2%A7view%C2%A7data-science-on%C2%A79781098118945%C2%A7',<br/> 'page_curr': '12',<br/> 'page_tot': '583',<br/> 'pages_perc': '2.1%',<br/> 'url': '> https://learning.oreilly.com/library/view/data-science-on/9781098118945/ <'}|<span style="color:yellow">**WIP**</span>|
