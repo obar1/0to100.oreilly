@@ -1,12 +1,11 @@
 
 # TOC
-## `19` books
-### 2024/06/22-16:44:44
+## `18` books
+### 2024/06/26-15:17:45
 |  ISBN 	|   img	|  epub 	|  pdf 	|  `json-contents` 	| `status` |
 |---	|---	|---	|---	|---	|---	|
 |<span style="color:blue">**9781098108298**</span>|![`img`](./9781098108298/9781098108298.png)|[`epub`](./9781098108298/9781098108298.epub)|[`pdf`](./9781098108298/9781098108298.pdf)|{'isbn': '9781098108298',<br/> 'kb': 'https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7library%C2%A7view%C2%A7fundamentals-of-data%C2%A79781098108298%C2%A7',<br/> 'page_curr': '56',<br/> 'page_tot': '563',<br/> 'pages_perc': '9.9%',<br/> 'url': '> https://learning.oreilly.com/library/view/fundamentals-of-data/9781098108298/ <'}|<span style="color:yellow">**WIP**</span>|
 |<span style="color:blue">**9781098118945**</span>|![`img`](./9781098118945/9781098118945.png)|[`epub`](./9781098118945/9781098118945.epub)|[`pdf`](./9781098118945/9781098118945.pdf)|{'isbn': '9781098118945',<br/> 'kb': 'https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7library%C2%A7view%C2%A7data-science-on%C2%A79781098118945%C2%A7',<br/> 'page_curr': '12',<br/> 'page_tot': '583',<br/> 'pages_perc': '2.1%',<br/> 'url': '> https://learning.oreilly.com/library/view/data-science-on/9781098118945/ <'}|<span style="color:yellow">**WIP**</span>|
-|<span style="color:blue">**9781118824795**</span>|![`img`](./9781118824795/9781118824795.png)|[`epub`](./9781118824795/9781118824795.epub)|[`pdf`](./9781118824795/9781118824795.pdf)|{'isbn': '9781118824795',<br/> 'pages_perc': 'n/a',<br/> 'url': '> https://learning.oreilly.com/library/9781118824795 <'}|<span style="color:yellow">**WIP**</span>|
 |<span style="color:blue">**9781119361152**</span>|![`img`](./9781119361152/9781119361152.png)|[`epub`](./9781119361152/9781119361152.epub)|[`pdf`](./9781119361152/9781119361152.pdf)|{'isbn': '9781119361152',<br/> 'page_curr': '0',<br/> 'page_tot': '250',<br/> 'pages_perc': '0.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/do-big-things/9781119361152/ <'}|<span style="color:yellow">**WIP**</span>|
 |<span style="color:blue">**9781292083384**</span>|![`img`](./9781292083384/9781292083384.png)|[`epub`](./9781292083384/9781292083384.epub)|[`pdf`](./9781292083384/9781292083384.pdf)|{'isbn': '9781292083384',<br/> 'page_curr': '0',<br/> 'page_tot': '247',<br/> 'pages_perc': '0.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/increase-your-self/9781292083384/ <'}|<span style="color:yellow">**WIP**</span>|
 |<span style="color:blue">**9781484261866**</span>|![`img`](./9781484261866/9781484261866.png)|[`epub`](./9781484261866/9781484261866.epub)|[`pdf`](./9781484261866/9781484261866.pdf)|{'isbn': '9781484261866',<br/> 'pages_perc': 'n/a',<br/> 'url': '> https://learning.oreilly.com/library/9781484261866 <'}|<span style="color:yellow">**WIP**</span>|
