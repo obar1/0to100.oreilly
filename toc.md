@@ -1,7 +1,7 @@
 
 # TOC
 ## `19` books
-### 2024/06/27-21:47:22
+### 2024/06/27-21:49:39
 |  ISBN 	|   img	|  epub 	|  pdf 	|  `json-contents` 	| `status` |
 |---	|---	|---	|---	|---	|---	|
 |<span style="color:blue">**9781098108298**</span>|![`img`](./9781098108298/9781098108298.png)|[`epub`](./9781098108298/9781098108298.epub)|[`pdf`](./9781098108298/9781098108298.pdf)|{'isbn': '9781098108298',<br/> 'kb': 'https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7library%C2%A7view%C2%A7fundamentals-of-data%C2%A79781098108298%C2%A7',<br/> 'page_curr': '56',<br/> 'page_tot': '563',<br/> 'pages_perc': '9.9%',<br/> 'url': '> https://learning.oreilly.com/library/view/fundamentals-of-data/9781098108298/ <'}|<span style="color:yellow">**WIP**</span>|
