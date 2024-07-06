@@ -1,8 +1,8 @@
 {
   "title" : "Apache Kafka Series - Learn Apache Kafka for Beginners v3",
-  "isbn": "9781789342604",
+  
   "url": "https://learning.oreilly.com/videos/apache-kafka-series/9781789342604",
   "page_curr": "8",
   "page_tot": "15",
-  "kb": "https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7videos%C2%A7apache-kafka-series%C2%A79781789342604%C2%A7"
+  "#kb": "https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7videos%C2%A7apache-kafka-series%C2%A79781789342604%C2%A7"
 }

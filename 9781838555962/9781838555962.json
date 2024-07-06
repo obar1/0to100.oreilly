@@ -1,8 +1,8 @@
 {
-    "isbn": "9781838555962",
+    
     "title": "Kubernetes for the Absolute Beginners - Hands-On",
     "url": "https://learning.oreilly.com/course/kubernetes-for-the/9781838555962/",
     "page_curr": "1",
     "page_tot": "11",
-    "kb": "https://github.com/obar1/kb.oreilly/blob/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7course%C2%A7kubernetes-for-the%C2%A79781838555962%C2%A7"
+    "#kb": "https://github.com/obar1/kb.oreilly/blob/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7course%C2%A7kubernetes-for-the%C2%A79781838555962%C2%A7"
 }
