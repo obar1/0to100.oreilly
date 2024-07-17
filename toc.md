@@ -1,7 +1,7 @@
 
 # TOC
 ## `19` metabook
-### 2024/07/06-11:53:11
+### 2024/07/17-14:14:01
 |  ISBN 	|   img	|  `meta-contents`  	|  `json-contents` 	| `status` |
 |---	|---	|---	|---		|---	|
 |<span style="color:blue">**9781098108298**</span>|![`img`](./9781098108298/9781098108298.png)|[`xyz`](./9781098108298/)|{'**kb**': 'https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7library%C2%A7view%C2%A7fundamentals-of-data%C2%A79781098108298%C2%A7',<br/> 'isbn': '9781098108298',<br/> 'page_curr': '56',<br/> 'page_tot': '563',<br/> 'pages_perc': '9.9%',<br/> 'url': '> https://learning.oreilly.com/library/view/fundamentals-of-data/9781098108298/ <'}|<span style="color:yellow">**WIP**</span>|
