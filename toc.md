@@ -1,7 +1,7 @@
 
 # TOC
-## `20` metabook
-### 2024/09/13-22:24:20
+## `21` metabook
+### 2024/09/13-22:33:19
 
 ## legend:
 
@@ -30,4 +30,5 @@
 |<span style="color:blue">**9781804615256**</span>|![`img`](./9781804615256/9781804615256.png)|[`xyz`](./9781804615256/)|{'isbn': '9781804615256',<br/> 'page_curr': '0',<br/> 'page_tot': '608',<br/> 'pages_perc': '0.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/building-etl-pipelines/9781804615256/ <'}|<span style="color:yellow">**WIP**</span>|:book:|
 |<span style="color:blue">**9781803232577**</span>|![`img`](./9781803232577/9781803232577.png)|[`xyz`](./9781803232577/)|{'**kb**': 'https://github.com/obar1/kb.oreilly/blob/main/https%C2%A7%C2%A7%C2%A7www.oreilly.com%C2%A7library%C2%A7view%C2%A7functional-python-programming%C2%A79781803232577%C2%A7/readme.md',<br/> 'isbn': '9781803232577',<br/> 'page_curr': '1',<br/> 'page_tot': '15',<br/> 'pages_perc': '6.7%',<br/> 'title': 'Functional Python Programming - Third Edition',<br/> 'url': '> https://learning.oreilly.com/library/view/functional-python-programming/9781803232577 <'}|<span style="color:yellow">**WIP**</span>|:book:|
 |<span style="color:blue">**9781098142377**</span>|![`img`](./9781098142377/9781098142377.png)|[`xyz`](./9781098142377/)|{'**kb**': 'https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7library%C2%A7view%C2%A7analytics-engineering-with%C2%A79781098142377%C2%A7',<br/> 'isbn': '9781098142377',<br/> 'page_curr': '0',<br/> 'page_tot': '392',<br/> 'pages_perc': '0.0%',<br/> 'url': '> https://learning.oreilly.com/library/view/analytics-engineering-with/9781098142377 <'}|<span style="color:yellow">**WIP**</span>|:book:|
+|<span style="color:blue">**9781617298677**</span>|![`img`](./9781617298677/9781617298677.png)|[`xyz`](./9781617298677/)|{'isbn': '9781617298677',<br/> 'pages_perc': 'n/a',<br/> 'url': '> https://learning.oreilly.com/library/view/the-programmers-brain/9781617298677 <'}|<span style="color:yellow">**WIP**</span>|:book:|
         
