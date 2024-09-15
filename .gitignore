@@ -14,19 +14,10 @@ venv/
 # idea
 .idea/**
 
-# test related
-0to100**/
 
-map.md
-repo/
-toc.md
 *.yaml
-safaribooks/
 
 # pip install
 build
 /dist
 *.egg-info
-
-*.pdf
-*.epub
