@@ -1,14 +1,12 @@
 
 # TOC
 ## `5` metabook
-### 2024/09/16-06:48:14
+### 2024/09/16-06:51:58
 
 ## legend:
 
 **legend_icons**
 `Book` :book:
-`Event` :floppy_disk:
-`Course` :whale:
 
 |  ISBN 	|   img	|  `meta-contents`  	|  `json-contents` 	| `status` | `icons`
 |---	|---	|---	|---		|---	|---	|
