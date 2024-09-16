@@ -1,5 +1,7 @@
 {
-    "isbn": "9781484264706",
-    "pages_perc": "n/a",
-    "url": "https://learning.oreilly.com/library/view/getting-started-with/9781484264706"
+    "url": "https://learning.oreilly.com/library/view/getting-started-with/9781484264706",
+    "page_curr": "1",
+    "page_tot": "10",
+    "title": "Getting Started with Containers in Google Cloud Platform: Deploy, Manage, and Secure Containerized Applications",
+    "**kb**": "https://github.com/obar1/kb.oreilly/blob/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7library%C2%A7view%C2%A7getting-started-with%C2%A79781484264706/readme.md"
 }
