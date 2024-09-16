@@ -1,0 +1,4 @@
+type: not-a-map
+configs:
+  path: "./repo"
+  finalized: true

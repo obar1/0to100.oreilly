@@ -15,9 +15,10 @@ venv/
 .idea/**
 
 
-*.yaml
-
 # pip install
 build
 /dist
 *.egg-info
+
+# hide map yaml with secrets
+map.yaml
