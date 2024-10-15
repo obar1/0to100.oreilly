@@ -139,6 +139,5 @@ class MetaBook:
     @property
     def get_matching_icon_as_md(self):
         icons = self.config_map.get_legend_icons
-
-        res = [i.icon for i in icons if re.search(i.regex, self.http_url)]
+        res = [i.icon for i in icons if re.search(i.regex, self.metadata.metadata['url'])]
         return " ".join(res)
