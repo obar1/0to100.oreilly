@@ -1,7 +1,7 @@
 
 # TOC
-## `6` metabook
-### 2024/10/15-13:49:53
+## `7` metabook
+### 2024/10/31-22:06:19
 
 ## legend:
 
@@ -19,4 +19,5 @@
 |<span style="color:blue">**9781789342604**</span>|![`img`](./9781789342604/9781789342604.png)|[`xyz`](./9781789342604/)|{'**kb**': 'https://github.com/obar1/kb.oreilly/tree/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7videos%C2%A7apache-kafka-series%C2%A79781789342604%C2%A7',<br/> 'isbn': '9781789342604',<br/> 'page_curr': '15',<br/> 'page_tot': '15',<br/> 'pages_perc': '100.0%',<br/> 'title': 'Apache Kafka Series - Learn Apache Kafka for Beginners v3',<br/> 'url': '> https://learning.oreilly.com/videos/apache-kafka-series/9781789342604 <'}|<span style="color:green">**DONE**</span>|:book: :camera_flash:|
 |<span style="color:blue">**9781838555962**</span>|![`img`](./9781838555962/9781838555962.png)|[`xyz`](./9781838555962/)|{'**kb**': 'https://github.com/obar1/kb.oreilly/blob/main/https%C2%A7%C2%A7%C2%A7learning.oreilly.com%C2%A7course%C2%A7kubernetes-for-the%C2%A79781838555962%C2%A7',<br/> 'isbn': '9781838555962',<br/> 'page_curr': '1',<br/> 'page_tot': '11',<br/> 'pages_perc': '9.1%',<br/> 'title': 'Kubernetes for the Absolute Beginners - Hands-On',<br/> 'url': '> https://learning.oreilly.com/course/kubernetes-for-the/9781838555962/ <'}|<span style="color:yellow">**WIP**</span>|:book: :whale:|
 |<span style="color:blue">**9781633437166**</span>|![`img`](./9781633437166/9781633437166.png)|[`xyz`](./9781633437166/)|{'isbn': '9781633437166',<br/> 'page_curr': '0',<br/> 'page_tot': '12',<br/> 'pages_perc': '0.0%',<br/> 'title': 'Build a Large Language Model (From Scratch)',<br/> 'url': '> https://learning.oreilly.com/library/view/build-a-large/9781633437166/ <'}|<span style="color:yellow">**WIP**</span>|:book:|
+|<span style="color:blue">**9781800560956**</span>|![`img`](./9781800560956/9781800560956.png)|[`xyz`](./9781800560956/)|{'isbn': '9781800560956',<br/> 'page_curr': '1',<br/> 'page_tot': '10',<br/> 'pages_perc': '10.0%',<br/> 'title': 'Business Intelligence with Looker Cookbook',<br/> 'url': '> https://learning.oreilly.com/library/view/business-intelligence-with/9781800560956 <'}|<span style="color:yellow">**WIP**</span>|:book:|
         
